@@ -7,14 +7,12 @@
 <link rel="stylesheet" href="src/style.css"/>
 </head>
 <body>
+<div class="container">
 <header>
- <h1>Welcome to your AI Recipe Generator</h1>
+ <h1>AI Recipe Generator</h1>
 </header>
-
  <main>
-    <div>
- Welcome to your AI Recipe Generator! Simply type in the ingredients you wish to use from your fridge or cupboard, and you'll get a recipe.
-      </div>
+ <h3>Welcome to your personal, AI powered kitchen assistant! Simply type in the ingredients you have on hand and the generator will give you a recipe.</h3>
       <form>
         <input
           type="text"
@@ -22,14 +20,20 @@
           autofocus
           required
           autocomplete="off"
+          class="instructions"
         />
-        <input type="submit" />
-      </form>
+       <input type="submit" class="submit-button" />
+    </form>
+    <div class="recipe">
+          Here's your recipe!
+        </div>
     </main>
 
 <footer>This AI project was coded by <a href="https://github.com/JesGardiner" target="_blank">Jessica Gardiner</a> and is <a href="https://github.com/JesGardiner/recipe-generator" target="_blank"> open-sourced on GetHub
-</a> and is <a ref="https://ai-recipe-generator-by-jess.netlify.app/" target="_blank">hosted on Netlify</a>.
+</a> and <a href="https://ai-recipe-generator-by-jess.netlify.app/" target="_blank">hosted on Netlify</a>.
 </footer>
- <script src="src/index.js"></script>
-</body>
+</div>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>
