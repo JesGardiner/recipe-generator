@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Recipe Generator</title>
 <link rel="stylesheet" href="src/style.css"/>
 </head>
@@ -13,7 +14,7 @@
 </header>
  <main>
  <h3>Welcome to your personal, AI powered kitchen assistant! Simply type in the ingredients you have on hand and the generator will give you a recipe.</h3>
-      <form>
+      <form id="recipe-generator-form">
         <input
           type="text"
           placeholder="Enter your ingredients"
@@ -24,8 +25,7 @@
         />
        <input type="submit" class="submit-button" />
     </form>
-    <div class="recipe">
-          Here's your recipe!
+    <div class="recipe" id="recipe">
         </div>
     </main>
 
