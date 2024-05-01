@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <title>AI Recipe Generator</title>
+      <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+     <title>AI Recipe Generator</title>
 <link rel="stylesheet" href="src/style.css"/>
 </head>
 <body>
@@ -13,20 +14,22 @@
  <h1>AI Recipe Generator</h1>
 </header>
  <main>
- <h3>Welcome to your personal, AI powered kitchen assistant! Simply type in the ingredients you have on hand and the generator will give you a recipe.</h3>
+ <h3>Welcome to your personal, AI powered kitchen assistant! Simply type in which specific food ingredient you're craving and the generator will give you a recipe with your desired ingredient!</h3>
       <form id="recipe-generator-form">
         <input
           type="text"
-          placeholder="Enter your ingredients"
+          placeholder="What do you feel like?"
           autofocus
           required
           autocomplete="off"
           class="instructions"
+          id="user-instructions"
         />
        <input type="submit" class="submit-button" />
     </form>
-    <div class="recipe" id="recipe">
+    <div class="hint">i.e: I feel like something with cheese</div>
         </div>
+        <div class="recipe hidden" id="recipe"></div>
     </main>
 
 <footer>This AI project was coded by <a href="https://github.com/JesGardiner" target="_blank">Jessica Gardiner</a> and is <a href="https://github.com/JesGardiner/recipe-generator" target="_blank"> open-sourced on GetHub
